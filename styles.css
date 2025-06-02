@@ -1,0 +1,188 @@
+/* ===== Variables de color y fondo estilo Kuepa ===== */
+:root {
+  --color-bg-dark: #0a0a0a;
+  --color-bg-darker: #000000;
+  --color-bg-medium: #1f1f1f;
+  --color-bg-light: #f0f0f0;
+  --color-text: #ffffff;
+  --color-text-subtle: #bbbbbb;
+  --gradient-orange: linear-gradient(to right, #fd580c, #e97f28);
+  --gradient-hero: radial-gradient(circle at center, #ff512f 0%, #0a0a0a 70%);
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text);
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+header {
+  background: var(--gradient-hero);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#menu {
+  background: var(--gradient-hero);
+}
+
+h1, h2, h3, h4 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--gradient-orange);
+  display: inline-block; /* NECESARIO */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+p, li {
+  color: var(--color-text-subtle);
+  font-size: 1rem;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.bg-dark { background-color: var(--color-bg-dark); }
+.bg-medium { background-color: var(--color-bg-medium); }
+.bg-light { background-color: var(--color-bg-light); }
+
+.card {
+  background-color: var(--color-bg-medium);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  color: var(--color-text);
+}
+
+.btn-gradient {
+  display: inline-block;
+  background: var(--gradient-orange);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.form-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--color-bg-light);
+  color: #111;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cccccc;
+  margin-bottom: 1.5rem;
+  font-family: inherit;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  outline: none;
+  border-color: #ff512f;
+  box-shadow: 0 0 0 3px rgba(255, 81, 47, 0.2);
+}
+
+.form-card button {
+  background: var(--gradient-orange);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.form-card input,
+.form-card textarea {
+  background-color: #fff;
+}
+
+.form-card input,
+.form-card textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.2rem; }
+  p { font-size: 0.95rem; }
+  section {
+    padding: 3rem 1rem;
+  }
+}
