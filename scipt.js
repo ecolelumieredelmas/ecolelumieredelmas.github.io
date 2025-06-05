@@ -1,4 +1,3 @@
-
 const burger = document.getElementById('burger');
 const menu = document.getElementById('menu');
 
@@ -44,10 +43,4 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
     alert("Por favor completa todos los campos.");
   }
-});
-
-// Toggle menu mobile
-document.getElementById("burger").addEventListener("click", function () {
-  const menu = document.getElementById("menu");
-  menu.classList.toggle("hidden");
 });
