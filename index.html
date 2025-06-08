@@ -20,3 +20,522 @@
   <meta name="twitter:title" content="Sortir de la pauvreté en Haïti : ce que j’aurais aimé savoir plus tôt" />
   <meta name="twitter:description" content="Apprends à sortir de la pauvreté en Haïti grâce à l’anglais et au développement web. Conseils, motivation et ressources pour réussir." />
   <meta name="twitter:image" content="https://tonsite.com/image-partage.jpg" />
+<link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-dark text-light">
+
+  <header class="fixed top-0 left-0 right-0 sliding-radial px-6 py-7 flex justify-between items-center z-50 shadow-md">
+  <h1 class="text-2xl font-bold bg-clip-text sliding-title bg-gradient-to-r from-[#fd580c] to-[#e97f28]">
+    École Lumière
+  </h1>
+
+  <!-- Bouton burger fixed visible seulement sur mobile -->
+  <button id="burger"
+    aria-label="Menu"
+    class="fixed top-4 right-4 z-60 md:hidden flex items-center justify-center w-12 h-12 bg-black bg-opacity-50 text-white text-3xl rounded-lg shadow-md hover:bg-opacity-75 transition duration-300 focus:outline-none focus:ring-2 focus:ring-orange-400">
+    ☰
+  </button>
+
+  <nav id="menu"
+    class="hidden md:flex md:items-center md:gap-6 md:static md:w-auto md:bg-transparent md:border-none
+    bg-gradient-to-r from-[#ff512f] to-[#0a0a0a] absolute top-full left-0 w-full border-t border-gray-700 md:border-none z-60">
+    <ul class="flex flex-col md:flex-row gap-4 md:gap-6 text-sm font-semibold p-4 md:p-0 text-white">
+      <li><a href="#calendrier" class="hover:text-orange-400 transition">Calendrier</a></li>
+      <li><a href="#inscription" class="hover:text-orange-400 transition">inscription</a></li>
+      <li><a href="#contact" class="hover:text-orange-400 transition">Contact</a></li>
+      <li><a href="#questions" class="hover:text-orange-400 transition">Questions</a></li>
+      <li><a href="#ou-sommes-nous" class="hover:text-orange-400 transition">Ou nous trouver</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="bg-black py-24 px-6 text-center text-white">
+  <div class="max-w-5xl animation mx-auto space-y-8">
+    <h2 class="text-4xl md:text-5xl font-extrabold tracking-wide text-white leading-snug">
+      <span>Avant les notes, la conscience.</span>
+      <span>Avant le diplôme, la vision.</span>
+    </h2>
+
+    <p class="text-xl md:text-2xl leading-loose text-gray-200">
+      Nous offrons <span class="text-orange-400 font-semibold">plus qu’un bulletin à la fin du trimestre</span>.
+      Nous offrons <span class="text-red-400 font-semibold">des armes contre la misère</span> et 
+      <span class="text-indigo-400 font-semibold">des rêves construits sur du concret</span>, avec un vrai plan pour l’avenir.
+    </p>
+
+    <p class="text-xl md:text-2xl leading-loose text-gray-200">
+      <span class="text-white font-bold">L’avenir commence ici</span>, et il s’écrit grâce à 
+      <span class="text-blue-400 font-semibold">la connaissance</span>, 
+      <span class="text-green-400 font-semibold">la volonté</span> 💡💻 
+      et <span class="text-purple-400 font-semibold">le développement web</span>.
+    </p>
+    </div>
+    
+    <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+      <a href="#apropos" class="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:scale-105 transition">
+        🔍 En savoir plus
+      </a>
+      <a href="#inscription" class="bg-gradient-to-r from-green-500 to-teal-500 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:scale-105 transition">
+        📝 S’inscrire maintenant
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="relative bg-[#0f0f0f] py-24 px-6 text-white text-center overflow-hidden">
+  <!-- Dégradé de fond -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#1a1a1a] to-[#0f0f0f] opacity-80"></div>
+
+  <!-- Contenu -->
+  <div class="relative max-w-5xl mx-auto space-y-12 z-10">
+
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-orange-400 to-yellow-300 drop-shadow mb-4">
+        💻 C’est quoi, le développement web ?
+      </h2>
+      <h3 class="text-2xl md:text-3xl font-semibold text-indigo-300 drop-shadow">C’est une porte d’entrée vers un avenir que personne ne nous avait promis</h3>
+    </div>
+
+    <p class="text-lg md:text-xl text-gray-200 leading-relaxed space-y-6 text-left max-w-3xl mx-auto">
+      Imagine un métier que tu peux apprendre en quelques mois, sans diplôme universitaire, avec juste un ordinateur et une connexion internet. Un métier qui te permet de gagner ta vie depuis chez toi, en Haïti, tout en travaillant avec des entreprises aux États-Unis, au Canada ou en Europe. Ce métier existe. Il s'appelle le <span class="bg-gradient-to-r from-indigo-600 via-orange-400 to-yellow-300 bg-clip-text text-transparent font-bold">développement web</span>.
+
+      Le développement web, ce n’est pas seulement écrire du code. C’est apprendre à créer des sites, des applications, des plateformes. C'est <span class="text-orange-400 font-bold">la meilleure option pour un Haïtien</span>, c’est plus qu’accessible, c’est rapide, et l’employabilité est garantie si on parle anglais <span class="text-orange-400 font-bold">(80 % des offres de travail sont en anglais)</span>. Pas d’études longues. Pas dans dix ans. Mais en quelques mois pour ceux qui parlent anglais, et un peu plus de 2 ans pour ceux qui apprennent l’anglais en parallèle — ce qui reste nettement mieux que <span class="text-red-600 font-bold">l’université</span>, qui te prendra généralement <span class="text-red-600 font-bold">4 ans sans garantie d’emploi en Haïti.</span><br><br>
+
+      Des milliers de jeunes comme toi, dans des pays comme le nôtre, ont déjà changé leur vie grâce à cette compétence. En seulement <span class="text-blue-400 font-bold">3 à 6 mois de formation intensive</span>, beaucoup décrochent leur premier contrat. Et ce n’est pas pour des miettes : les salaires débutent souvent autour de <span class="text-orange-400 font-bold">30 000 $ US par an</span>. Tu lis bien. Des salaires que presque aucun emploi traditionnel ne peut offrir ici.
+
+      Le mieux ? Tu n’as absolument pas besoin d’émigrer. <span class="text-orange-400 font-bold">86 % des développeurs travaillent à distance</span> — <span class="text-green-500 font-bold">c’est la norme dans cette carrière</span>, même dans les pays développés</span>.  <span class="text-blue-400 font-semi-bold">Le monde du web n’a juste pas de frontières</span>. C’est un monde où ton passeport, ton adresse ou ta situation sociale ne comptent pas. Ce qui compte, c’est ce que tu sais faire.<br><br>
+
+      Mais il y a une condition : <span class="text-orange-600 font-bold">l’anglais</span>. 80 % des offres de travail sont dans cette langue. C’est pourquoi nous vous recommandons d’apprendre cette langue avant même de commencer à coder — ou faites-le en parallèle.
+
+      Si tu es <span class="text-yellow-500 font-bold">motivé, curieux, prêt à apprendre</span> et à <span class="text-purple-600 font-bold">te battre pour ton avenir</span>, le développement web est <span class="bg-gradient-to-r from-indigo-600 via-yellow-400 to-green-300 bg-clip-text text-transparent font-bold">ta meilleure option.</span>
+    </p>
+
+    <p class="text-white font-semibold italic mt-10">– La Direction</p>
+  </div>
+</section>
+
+  <section class="bg-medium text-center py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-gradient mb-12">Notre mission, vision et ambition</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- 1. Renforcement de l’anglais -->
+      <div class="card">
+        <h3 class="text-xl font-bold text-gradient mb-4">🎯 Renforcement de l’anglais</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          Des cours supplémentaires sont proposés pour améliorer la maîtrise de la langue.
+        </p>
+      </div>
+
+      <!-- 2. Ateliers le week-end -->
+      <div class="card">
+        <h3 class="text-xl font-bold text-gradient mb-4">👨‍🏫 Ateliers le week-end</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          Des sessions dédiées à l'anglais et au développement web sont organisées pour les élèves motivés. 
+          Nous leur apprenons aussi à être autodidactes, pour leur faciliter la continuité s'ils viennent à quitter l'école.
+        </p>
+      </div>
+
+      <!-- 3. Accès à des ressources de qualité -->
+      <div class="card">
+        <h3 class="text-xl font-bold text-gradient mb-4">💡 Accès à des ressources de qualité</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          L’école financera des cours en ligne payants et les rendra accessibles à tous les élèves intéressés dès l’année 2025-2026. 
+          Nous les encouragerons à venir les week-ends apprendre en groupe à l'école, et à prioriser l’anglais au début, 
+          car le contenu pour le développement web en français sera ouvert à eux 24h/24 depuis chez eux.
+        </p>
+      </div>
+
+      <!-- 4. Engagement envers les élèves -->
+      <div class="card">
+        <h3 class="text-xl font-bold text-gradient mb-4">🎓 Nous nous engageons pour nos élèves</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          Chaque année, l’école s’engage à financer la formation en développement web de 3 à 5 élèves maîtrisant l’anglais, 
+          afin de les aider à intégrer le marché du travail numérique. 
+          La formation sera proposée par un des meilleurs bootcamps du monde (à plus de 8 000 dollars) 
+          et avec garantie d’emploi sur 3 à 6 mois.
+        </p>
+        <p class="text-subtle text-base leading-relaxed mt-4">
+          Nous présenterons leurs résultats chaque fin d’année ou avant les vacances d’été. 
+          Ce programme vise à inspirer et motiver l’ensemble des élèves à suivre cette voie prometteuse.
+        </p>
+      </div>
+
+      <!-- 5. Nouvelle tradition (intro) -->
+      <div class="card">
+        <h3 class="text-xl font-bold text-gradient mb-4">✨ Une nouvelle tradition pour montrer que c’est possible</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          À partir de l’année scolaire 2025-2026, notre école organisera une grande célébration à la fin de chaque année scolaire et civile (juin et décembre), juste après les examens.
+          Cette fête mettra à l’honneur les élèves sélectionnés et financés pour se former et travailler dans le domaine du développement web, 
+          en plus de ceux ayant réussi seuls ou avec l’aide de leurs parents.
+        </p>
+      </div>
+
+      <!-- 6. Nouvelle tradition (valeurs et vision) -->
+      <div class="card">
+        <h3 class="text-xl font-bold text-gradient mb-4">🌱 Une preuve vivante que c’est possible</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          Cette tradition vise à démontrer, année après année, que le développement web est une alternative sérieuse, 
+          concrète et porteuse d'opportunités pour les jeunes, contrairement aux parcours universitaires traditionnels qui, 
+          dans notre contexte, mènent rarement à un emploi.
+        </p>
+        <p class="text-subtle text-base leading-relaxed mt-4">
+          Nous continuerons à célébrer jusqu’au jour où plus de 10 élèves seront choisis chaque année.
+          C’est notre manière de dire aux jeunes et à leurs parents : d’autres l’ont fait, certains avec notre aide, d’autres sans.
+          Mais tous ceux ici devant vous ont réussi.
+        </p>
+        <p class="mt-4 font-semibold text-white">Et toi, tu peux réussir aussi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Ce qui rend l’école unique -->
+<section class="bg-medium">
+  <h2 class="text-3xl font-bold text-center text-gradient mb-8">Pourquoi choisir notre école ?</h2>
+
+  <div class="highlight">
+    <p>
+      Si plus de 60 % de nos jeunes finissent au chômage après l’université, comment devons-nous nous sentir ? Cette fois-ci, ce ne sera pas comme avant. Nous avons fini de nous indigner en silence. Nous allons construire l’avenir de nos enfants ici, sans attendre quoi que ce soit de qui que ce soit.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="card">
+      <h3 class="card-title">💻Pourquoi le développement web ?</h3>
+      <p>Parce que c’est une carrière moderne, exerçable en ligne, avec des salaires dépassant 30 000 $ US par an dès la première année. Et surtout, elle est accessible depuis n’importe où — même en Haïti. 83,59 % des développeurs travaillent à distance.</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title">🌐Pourquoi dites-vous que c’est une meilleure option que l’université ?</h3>
+      <p>Parce que dans un pays comme le nôtre, c’est leur meilleure chance. Une carrière stable, mondiale, et indépendante de la situation du pays.</p>
+    </div> 
+    <div class="card">
+      <h3 class="card-title">Pourquoi l’anglais ?</h3>
+      <p>Car plus de 80 % des opportunités dans le domaine sont en anglais. Apprendre cette langue, c’est accéder à l’emploi mondial.</p>
+    </div> 
+    <div class="card">
+      <h3 class="card-title">📅 Comment ça s’intègre dans leur quotidien ?</h3>
+      <p>Nous ne supprimons rien : nous ajoutons. Les cours classiques restent intacts. On renforce l’anglais, et le programme web est proposé le week-end, pour les élèves motivés.</p>
+    </div> 
+    <div class="card">
+      <h3 class="card-title">🛠️ Pourquoi ne pas croire en un avenir qu’on peut construire soi-même ?</h3>
+      <p>Tu peux aller à l’université, étudier, décrocher ton diplôme. Ça dépend de toi, de ta volonté, et de tes moyens. Mais trouver du travail, ce n’est plus entre tes mains : cela dépend du marché, de tes contacts, parfois même de compromis injustes. Nous ne voulons pas ça pour nos élèves. Nous voulons leur offrir une voie réaliste, durable et digne — mais eux aussi, avec leurs parents, doivent choisir d’agir pour leur propre avenir🌱.</p>
+    </div> 
+  </div>
+</section>
+
+  <section id="programmes" class="bg-dark py-20 px-6 text-center">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-gradient mb-12">🚀 Notre offre éducative</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Maternelle -->
+      <div class="card">
+        <h3 class="text-xl font-bold text-gradient mb-4">🧸 Maternelle</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          <strong class="text-white">Âges : 3 à 5 ans</strong><br>
+          Apprentissage par le jeu, l’écoute et l’expression.<br>
+          Développement du langage, de la motricité et de la socialisation.<br>
+          Introduction douce aux premières notions (lettres, chiffres, couleurs).
+        </p>
+      </div>
+
+      <!-- Primaire -->
+      <div class="card">
+        <h3 class="text-xl font-bold text-gradient mb-4">📘 Primaire</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          <strong class="text-white">Classes : 1re à 6e année</strong><br>
+          Acquisition des fondamentaux : lecture, écriture, mathématiques.<br>
+          Cours d’éveil aux sciences, à l’histoire et à la culture générale.<br>
+          Développement de l’autonomie et du travail en groupe.<br>
+          Introduction progressive à l’anglais.
+        </p>
+      </div>
+
+      <!-- Secondaire -->
+      <div class="card lg:col-span-2">
+        <h3 class="text-xl font-bold text-gradient mb-4">🎓 Secondaire</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          <strong class="text-white">Classes : 7e à Philo</strong><br>
+          Approfondissement des connaissances dans toutes les matières obligatoires.<br>
+          Renforcement de l’anglais dès la 7e année.<br>
+          Ouverture aux compétences du 21e siècle : pensée critique, numérique, autodidaxie, travail en équipe.
+        </p>
+        <p class="text-subtle text-base leading-relaxed mt-4">
+          Dès l’année scolaire 2025-2026, les élèves pourront participer à des ateliers optionnels d’anglais et de développement web, organisés en groupe les week-ends.
+        </p>
+        <p class="text-subtle text-base leading-relaxed mt-4">
+          Chaque année, l’école sélectionnera et financera la formation de 3 à 5 élèves maîtrisant l’anglais. Ces élèves, âgés d’au moins 17 ans, seront choisis dès le mois de juin 2025 pour intégrer un parcours spécialisé orienté vers une carrière numérique.
+        </p>
+      </div>
+
+      <!-- Résumé général -->
+      <div class="card lg:col-span-3">
+        <h3 class="text-xl font-bold text-gradient mb-4">📈 Résumé de ce que nous proposons</h3>
+        <p class="text-subtle text-base leading-relaxed">
+          Notre établissement offre un parcours éducatif complet, de la maternelle au secondaire, dans un cadre structuré, bienveillant et ambitieux. 
+          À chaque étape, nous aidons nos élèves à développer leur curiosité, leur rigueur, et les orientons vers des chemins d’avenir solides — même ici, en Haïti.
+        </p>
+        <p class="text-subtle text-base leading-relaxed mt-4">
+          Dès la 4ᵉ année, nous remettons des <strong class="text-white">rapports mensuels personnalisés</strong> à ceux qui s’intéressent au développement web, 
+          pour éviter les erreurs qui freinent la progression. Nous les motiverons, leur fournirons du contenu supplémentaire ciblé.
+        </p>
+        <p class="text-subtle text-base leading-relaxed mt-4">
+          À partir de la 7ᵉ année, ils auront accès à l’école les samedis (et dès la Reto, aussi le dimanche).
+          Un <strong class="text-white">professeur d’anglais</strong> sera à leur disposition pour les accompagner.
+        </p>
+        <p class="text-subtle text-base leading-relaxed mt-4">
+          En complément, nous leur fournirons des <strong class="text-white">cours en ligne payants de qualité sur le développement web en français</strong>, financés par l’école et accessibles 24h/24 et 7j/7 sur leur téléphone.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="calendrier" class="bg-darker py-20 px-6 text-light text-center">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-blue-300 mb-12">📅 Événements à venir / Agenda</h2>
+
+    <!-- Calendrier scolaire -->
+    <div class="card border-l-4 border-blue-500 text-left mb-10">
+      <h3 class="text-2xl font-bold text-blue-400 mb-4">📘 Calendrier scolaire</h3>
+      <ul class="list-disc list-inside text-subtle space-y-2">
+        <li><strong class="text-white">Rentrée des classes :</strong> 1er septembre 2025</li>
+        <li><strong class="text-white">Vacances d'hiver :</strong> Fin décembre 2025 – début janvier 2026</li>
+        <li><strong class="text-white">Examens officiels :</strong> Mi-février 2026</li>
+        <li><strong class="text-white">Réunions parents-professeurs :</strong> Dates à venir</li>
+      </ul>
+    </div>
+
+    <!-- Ateliers du week-end -->
+    <div class="card border-l-4 border-green-500 text-left mb-10">
+      <h3 class="text-2xl font-bold text-green-400 mb-4">👨‍🏫 Ateliers du week-end</h3>
+      <p class="text-subtle text-base leading-relaxed">
+        Tous les samedis, des séances immersives permettront aux élèves d'enrichir leur vocabulaire en anglais grâce à du contenu éducatif ciblé. 
+        Ils suivront une méthode progressive de mémorisation, garantissant une nette amélioration de leur niveau au fil des semaines.
+      </p>
+      <p class="text-subtle text-base leading-relaxed mt-3">
+        <strong class="text-white">L'objectif :</strong> qu'un élève motivé en 7e devienne éligible au programme de financement en développement web.
+      </p>
+    </div>
+
+    <!-- Célébration des réussites -->
+    <div class="card border-l-4 border-purple-500 text-left">
+      <h3 class="text-2xl font-bold text-purple-400 mb-4">🎉 Célébration des réussites</h3>
+      <p class="text-subtle text-base leading-relaxed">
+        Plutôt que de planifier de grandes festivités cette année, l'accent sera mis sur la transmission des compétences essentielles.
+        À la fin de l'année, nous organiserons une grande célébration pour récompenser les élèves qui auront appris à coder et décroché un emploi dans le domaine.
+      </p>
+      <p class="text-subtle text-base leading-relaxed mt-3">
+        Ce sera l'occasion de partager espoir, motivation, et démontrer concrètement qu’en Haïti, <strong class="text-white">un futur digne se construit au présent</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="inscription" class="bg-dark py-20 px-6 text-center">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-gradient mb-12">📋 Procédure d’inscription</h2>
+
+    <div class="grid md:grid-cols-2 gap-10 text-left">
+      <!-- Infos inscription -->
+      <div class="card space-y-6">
+        <!-- Dates -->
+        <div>
+          <h3 class="text-xl font-bold text-gradient mb-2">📅 Dates</h3>
+          <p class="text-subtle text-base leading-relaxed">
+            <strong class="text-white">Du 15 juin au 15 août :</strong> retirer le formulaire d’inscription à la direction (de 8h à 13h).
+          </p>
+        </div>
+
+        <!-- Documents -->
+        <div>
+          <h3 class="text-xl font-bold text-gradient mb-2">🗂️ Documents requis</h3>
+          <ul class="list-disc list-inside text-subtle space-y-1">
+            <li>Copie de l’acte de naissance</li>
+            <li>Deux photos d’identité</li>
+            <li>Dernier bulletin (si disponible)</li>
+          </ul>
+        </div>
+
+        <!-- Frais -->
+        <div>
+          <h3 class="text-xl font-bold text-gradient mb-2">💰 Frais d’inscription</h3>
+          <p class="text-subtle text-base leading-relaxed">
+            <strong class="text-white">200 $ US</strong><br>
+            <strong class="text-white">Finalisation avant le 6 septembre 2025 :</strong> 800 $ US
+          </p>
+        </div>
+
+        <!-- Rentrée -->
+        <div>
+          <h3 class="text-xl font-bold text-gradient mb-2">🎓 Rentrée des classes</h3>
+          <p class="text-subtle text-base leading-relaxed">
+            <strong class="text-white">7 septembre 2025</strong>
+          </p>
+        </div>
+
+        <!-- Ouverture des inscriptions -->
+        <div class="pt-2 border-t border-gray-600">
+          <p class="text-subtle text-base leading-relaxed">
+            Les inscriptions pour l’année scolaire <strong class="text-white">2025–2026</strong> ouvriront le <strong class="text-white">10 juin</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Formulaire de contact -->
+      <div id="contact" class="card">
+        <h3 class="text-3xl font-bold text-center text-gradient mb-8">📬 Contactez-nous</h3>
+        <form action="https://formsubmit.co/ecolelumiere@gmail.com" method="POST" class="form-card">
+          <!-- Anti-spam honeypot -->
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="text" name="nom" placeholder="Nom de l’élève" required class="form-input">
+          <input type="email" name="email" placeholder="Email du parent" required class="form-input">
+          <textarea name="message" placeholder="Votre message ou vos questions" class="form-input"></textarea>
+
+          <button type="submit" class="btn-gradient">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="questions" class="max-w-4xl mx-auto p-6 my-10 rounded-2xl bg-[#1f1f1f] shadow-lg text-white font-sans">
+  <h2 class="text-3xl font-semibold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#fd580c] to-[#e97f28]">
+    Questions fréquentes❓
+  </h2>
+
+  <div class="space-y-6">
+    <!-- FAQ Item -->
+    <details class="group bg-[#0a0a0a] rounded-xl p-5 cursor-pointer border border-transparent hover:border-[#fd580c] transition-all duration-300 shadow-md">
+      <summary class="list-none flex items-center justify-between font-semibold text-lg select-none group-open:text-[#fd580c]">
+        <span>En quoi l’École Lumière d’Haïti est-elle différente des autres écoles ?</span>
+        <!-- Chevron Icon -->
+        <svg class="w-5 h-5 ml-2 text-[#fd580c] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <p class="mt-3 text-[#bbbbbb] leading-relaxed">
+        Nous ne formons pas seulement pour les examens. Nous préparons nos élèves à un avenir stable, loin de la pauvreté et de la misère, en leur offrant des compétences concrètes comme la capacité d’apprendre le développement web, l’anglais et à se former seuls dans le futur, en plus du programme officiel.
+      </p>
+    </details>
+
+    <details class="group bg-[#0a0a0a] rounded-xl p-5 cursor-pointer border border-transparent hover:border-[#fd580c] transition-all duration-300 shadow-md">
+      <summary class="list-none flex items-center justify-between font-semibold text-lg select-none group-open:text-[#fd580c]">
+        <span>Les matières classiques sont-elles toujours enseignées ?</span>
+        <svg class="w-5 h-5 ml-2 text-[#fd580c] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <p class="mt-3 text-[#bbbbbb] leading-relaxed">
+        Oui. Le programme scolaire officiel est suivi avec sérieux. Les ateliers d’anglais et de développement web sont des compléments, principalement proposés les week-ends aux élèves motivés. Ils sont ouverts les dimanches exclusivement pour les élèves à partir de 17 ans.
+      </p>
+    </details>
+
+    <details class="group bg-[#0a0a0a] rounded-xl p-5 cursor-pointer border border-transparent hover:border-[#fd580c] transition-all duration-300 shadow-md">
+      <summary class="list-none flex items-center justify-between font-semibold text-lg select-none group-open:text-[#fd580c]">
+        <span>Comment résumeriez-vous le développement web ?</span>
+        <svg class="w-5 h-5 ml-2 text-[#fd580c] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <p class="mt-3 text-[#bbbbbb] leading-relaxed">
+        Comme une carrière moderne qui consiste à créer des sites et des applications web. Elle peut s’exercer à distance, offre des salaires compétitifs (30 000 $ US/an ou plus dès la première année), et est accessible même depuis Haïti.
+      </p>
+    </details>
+
+    <details class="group bg-[#0a0a0a] rounded-xl p-5 cursor-pointer border border-transparent hover:border-[#fd580c] transition-all duration-300 shadow-md">
+      <summary class="list-none flex items-center justify-between font-semibold text-lg select-none group-open:text-[#fd580c]">
+        <span>Pourquoi l’école mise autant sur le numérique ?</span>
+        <svg class="w-5 h-5 ml-2 text-[#fd580c] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <p class="mt-3 text-[#bbbbbb] leading-relaxed">
+        Parce que dans un pays où les opportunités locales sont limitées, le numérique offre un avenir global, stable et indépendant des difficultés du pays.
+      </p>
+    </details>
+
+    <details class="group bg-[#0a0a0a] rounded-xl p-5 cursor-pointer border border-transparent hover:border-[#fd580c] transition-all duration-300 shadow-md">
+      <summary class="list-none flex items-center justify-between font-semibold text-lg select-none group-open:text-[#fd580c]">
+        <span>Mon enfant doit-il parler anglais pour commencer les ateliers ?</span>
+        <svg class="w-5 h-5 ml-2 text-[#fd580c] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <p class="mt-3 text-[#bbbbbb] leading-relaxed">
+        Non. Nous accueillons tous les niveaux. Le but est justement de les accompagner dès maintenant pour qu’ils atteignent un bon niveau d’anglais d’ici la fin du secondaire.
+      </p>
+    </details>
+
+    <details class="group bg-[#0a0a0a] rounded-xl p-5 cursor-pointer border border-transparent hover:border-[#fd580c] transition-all duration-300 shadow-md">
+      <summary class="list-none flex items-center justify-between font-semibold text-lg select-none group-open:text-[#fd580c]">
+        <span>Un nouvel élève peut-il être sélectionné pour le financement du programme de développement web ?</span>
+        <svg class="w-5 h-5 ml-2 text-[#fd580c] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <p class="mt-3 text-[#bbbbbb] leading-relaxed">
+        Oui. Chaque année, 3 à 5 élèves maîtrisant bien l’anglais et ayant au moins 17 ans seront sélectionnés pour un financement complet aux meilleurs bootcamps (+8000$ US). Les critères incluent l’assiduité aux ateliers du week-end, la motivation, les notes générales en cours l'année de sélection et le niveau d’anglais.
+      </p>
+    </details>
+
+    <details class="group bg-[#0a0a0a] rounded-xl p-5 cursor-pointer border border-transparent hover:border-[#fd580c] transition-all duration-300 shadow-md">
+      <summary class="list-none flex items-center justify-between font-semibold text-lg select-none group-open:text-[#fd580c]">
+        <span>Y a-t-il un uniforme ?</span>
+        <svg class="w-5 h-5 ml-2 text-[#fd580c] transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <p class="mt-3 text-[#bbbbbb] leading-relaxed">
+        Oui, le port de l’uniforme est obligatoire même pour les ateliers.
+      </p>
+    </details>
+  </div>
+</section>
+
+<section id="ou-sommes-nous" class="px-6 py-12 bg-black text-white">
+  <h2 class="text-3xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#fd580c] to-[#e97f28]">
+    Où nous trouver</h2>
+  <div class="rounded-2xl overflow-hidden shadow-lg max-w-4xl mx-auto border border-[#fd580c]/30">
+    <iframe
+      class="w-full h-[400px] grayscale-[20%] contrast-125 brightness-90 saturate-150"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60336.31106600976!2d-72.3227523!3d18.5121176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb9e7de7b52748b%3A0xc0195cf30101e16b!2sP%C3%A9tion-Ville%2C%20Ha%C3%AFti!5e0!3m2!1sfr!2sht!4v1717869620401!5m2!1sfr!2sht"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+<footer class="bg-[#000000] text-white py-8 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-sm text-[#bbbbbb]">&copy; 2025 École Lumière d’Haïti. Tous droits réservés.</p>
+    <nav class="flex flex-wrap justify-center gap-6 text-sm">
+      <a href="#" class="relative group text-[#bbbbbb] transition-colors duration-300 hover:text-[#fd580c]">
+        Règlement intérieur
+        <span class="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-[#fd580c] to-[#e97f28] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+      </a>
+      <a href="#" class="relative group text-[#bbbbbb] transition-colors duration-300 hover:text-[#fd580c]">
+        Mentions légales
+        <span class="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-[#fd580c] to-[#e97f28] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+      </a>
+      <a href="#" class="relative group text-[#bbbbbb] transition-colors duration-300 hover:text-[#fd580c]">
+        Politique de confidentialité
+        <span class="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-[#fd580c] to-[#e97f28] scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+      </a>
+    </nav>
+  </div>
+</footer>
+
+  <a href="https://wa.me/50987654321" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <script src="scipt.js"></script>
+</body>
+</html>
