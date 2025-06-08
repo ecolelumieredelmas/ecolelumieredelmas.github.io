@@ -44,3 +44,19 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     alert("Por favor completa todos los campos.");
   }
 });
+
+  const options = {
+    threshold: 0.5
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, options);
+
+  document.querySelectorAll('section.animation h2 span').forEach(span => {
+    observer.observe(span);
+  });
